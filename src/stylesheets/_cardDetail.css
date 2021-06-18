@@ -1,0 +1,48 @@
+.card-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px 45px;
+  border-radius: 15px;
+  z-index: 1000;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  color: gray;
+  transition: all 0.2s ease-in;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.card-detail .card-name {
+  text-align: center;
+}
+
+.card-info {
+  width: 70vw;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-info .info-right {
+  width: 45%;
+}
