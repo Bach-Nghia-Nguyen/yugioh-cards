@@ -39,7 +39,7 @@ const HomePage = () => {
     const getCards = async () => {
       let url = createURLPath({
         parameters: {
-          type: "Synchro Pendulum Effect Monster",
+          type: "Synchro%20Pendulum%20Effect Monster",
         },
       });
       console.log("test url: ", url);
