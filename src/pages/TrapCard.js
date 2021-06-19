@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import api from "../apiService";
 import CardDetailModal from "../components/CardDetailModal";
 
-const HomePage = () => {
+const TrapCard = () => {
   const [cards, setCards] = useState([]);
   const [selectedCard, setSelectedCard] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ const HomePage = () => {
     const getCards = async () => {
       let url = createURLPath({
         parameters: {
-          type: "Flip%20Effect%20Monster",
+          type: "trap%20card",
         },
       });
 
@@ -52,7 +52,7 @@ const HomePage = () => {
   return (
     <>
       <div className="home page">
-        <h1>Yugioh Cards</h1>
+        <h1>Trap Cards</h1>
 
         <main className="card-gallery">
           {cards && cards.length > 0 ? (
@@ -80,4 +80,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default TrapCard;

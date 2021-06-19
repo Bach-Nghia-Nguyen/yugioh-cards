@@ -1,0 +1,20 @@
+.side-menu {
+  min-width: 150px;
+  height: 100vh;
+  border-right: 1px solid gray;
+  position: fixed;
+  padding: 0 10px;
+}
+
+.side-menu .menu-btn {
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background-color: rgb(136, 136, 243);
+  margin: 10px 0;
+  padding: 10px 15px;
+  width: 100%;
+  cursor: pointer;
+}
